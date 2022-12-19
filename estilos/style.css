@@ -17,7 +17,8 @@ img#logo{
 }
 /* H1 */
 header > h1{
-    font-size: 1.9em;
+    font-size: 1.7em;
+    text-align: center;
 }
 
 /* MENU */

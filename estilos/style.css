@@ -9,59 +9,18 @@ body{
     background-color: lightgray;
     background-color: gray;
 }
-/* 
-header{
-    background-color: rgb(148, 148, 148);
-    display: flex;
-    justify-content: space-between;
-}
 
-
-span#burguer{
-    background-color: rgb(48, 48, 48);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    color: white;
-    padding: 10px;
-    height: 5vh;
-    margin: auto 0;
-}
-span#burguer:hover{
-    background-color: white;
-    color: white;
-}
-
-menu{
-    display: none;
-}
-menu > ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-menu a{
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-    background-color: rgb(87, 87, 87);
-    color: white;
-    border-top: 2px solid gray;
-}
-menu a:hover{
-    background-color: gray;
-}
- */
-
+/* LOGO */
 img#logo{
     margin-top: 10px;
     margin-left: 5px;
 }
+/* H1 */
+header > h1{
+    font-size: 1.9em;
+}
 
-
+/* MENU */
 /* Criando o hamburger */
 .hamburger{
     width: 2rem;
@@ -118,11 +77,9 @@ img#logo{
     right: -20rem;
     transition: all .8s;
 }
-
 .show-menu .sidebar{
     right: 0;
 }
-
 
 /* Menu interno */
 .menu{

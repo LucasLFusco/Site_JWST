@@ -1,12 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+/* 
+#00010D - preto
+#010A26 - azul escuro
+#012840 - azul claro
+#F2AC29 - dourado
+#F2F2F2 - cinza
+
+
+
+
+#07060D - preto
+#080B14 - azul ultra escuro
+#131326 - azul escuro
+#212E40 - azul claro
+#D99518 - dourado
+
+*/
+
+
+
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     list-style: none;
+    cursor: url('../imagens/cursor/cursor.png'), auto !important;
 }
 body{
-    background-color: rgb(53, 52, 52);
+    background-image: radial-gradient(circle at 17% 29%, #454449 5%, #131326 44%, #000001 100%);
+    /* background-image: linear-gradient(to left,#131326 50%,#080B14,#050024) */
 }
 
 /* LOGO */
@@ -18,6 +40,7 @@ header > h1{
     font-size: 1.7em;
     text-align: center;
     margin-bottom: 10px;
+    color: rgba(255, 255, 255, 0.685);
 }
 
 /* MENU */
@@ -35,14 +58,14 @@ header > h1{
     cursor: pointer;
 }
 .show-menu .hamburger{
-    right: 2rem;
+    right: 36px;
 }
 .line{
     width: 100%;
     height: 2px;
     padding: 1px;
     border-radius: 10px;
-    background-color: rgb(0, 255, 179);
+    background-color: #D99518;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.719);
     transition: transform .7s;
 }
@@ -50,7 +73,7 @@ header > h1{
 /* Criando o X */
 .show-menu #line1{
     transform: rotate(45deg) translate(6px, 14px);
-    background-color: rgb(224, 49, 102);
+    background-color: red;
     box-shadow: none;
 }
 
@@ -61,14 +84,14 @@ header > h1{
 
 .show-menu #line3{
     transform: rotate(-45deg) translate(5px, -14px);
-    background-color: rgb(224, 49, 102);
+    background-color: red;
     box-shadow: none;
 }
 
 
 /* Menu escondido */
 .sidebar{
-    background: linear-gradient(to right, #111111 , transparent );
+    background: linear-gradient(to top, #010A26 , transparent );
     width: 50vw;
     height: 33vh; /*AUMENTAR*/
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.767);
@@ -115,26 +138,28 @@ header > h1{
 
 .menu-item ul#estcient a{
     color: gray;
+    transition: all .7s;
 }
 .menu-item ul#estcient a:hover{
-    color: yellow;
+    color: #ffa600;
 }
 
 
 .menu-link{
-    color: rgb(245, 245, 245);
+    color: lightgray;
     transition: color .7s;
 }
 .menu-link:hover{
-    color: rgb(0, 255, 255);
-    background-color:rgb(0, 8, 8) ;
+    color: #F2AC29;
+    background-color:#010A26;
+    border-radius: 30px;
     transition: all .7s;
 }
 
 
 /* HOME - Foto e P */
 main section#home{
-   background: url('../imagens/background/JWST_Illustration.jpg') no-repeat top center;
+   background: url('../imagens/background/JWST_Illustration.jpg') no-repeat center center;
    background-size: cover;
    background-attachment: fixed;
    height: 100vh;
@@ -145,7 +170,7 @@ main section#home{
    justify-content: center;
 }
 main section .legenda{
-    color: white;
+    color: #F2F2F2;
     margin-bottom: 20px;
 }
 
@@ -153,7 +178,7 @@ main section .legenda{
 main .texto{
     margin: auto;
     /* width: 91vw; */
-    background-color: rgba(255, 255, 255, 0.548);
+    background-color: #f2f2f2be;
     padding: 10px;
     /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.685); */
 }
@@ -162,12 +187,14 @@ main section h2{
     font-weight: 900;    
     text-align: center;
     margin:20px auto;
+    color: #080B14;
 }
 main section h3{
     font-size: 1.2em;
     font-weight: 700;
     text-align: justify;
-    color: blue;
+    color: #012840a9;
+    margin-top: 10px;
 }
 main section p{
     text-align: justify;
@@ -224,4 +251,19 @@ main .img-campoprofundo{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+
+
+
+
+
+
+
+/* IFRAME */
+section#sbmais{
+    padding: 0;
+}
+section > div > iframe{
+    width: 444px;
+    height: 611px;
 }

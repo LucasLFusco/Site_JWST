@@ -75,7 +75,8 @@ h1,h2,h4,h5,h6 {
 				}
 		
 		#issues {
-			width: 65.5vw;
+			/* width: 65.5vw; */
+			width: 290.5px;
 			/* height: 600px; */
 			overflow: hidden;
 			float: left;

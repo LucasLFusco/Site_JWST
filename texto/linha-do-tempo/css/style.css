@@ -2,6 +2,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	cursor: url('../cursor/cursor.png'), auto !important;
 }
 
 body {
@@ -75,15 +76,13 @@ h1,h2,h4,h5,h6 {
 				}
 		
 		#issues {
-			width: 291px;
-			/* height: 600px; */
+			width: 274px;
 			overflow: hidden;
 			float: right;
 			text-align: justify;
 			margin-right: 50px;
 		}	
 			#issues li {
-				/* height: 600px; */
 				list-style: none;
 
 			}
@@ -91,7 +90,7 @@ h1,h2,h4,h5,h6 {
 				    transform: scale(1.1,1.1);
 				}
 				#issues li img {
-					margin: 13px 10px 5px 19px;
+					margin: 14px 0px 5px 12px;
 					transition: all 2s ease-in-out;
 				}
 				#issues li h1 {
@@ -103,15 +102,11 @@ h1,h2,h4,h5,h6 {
 				}
 				#issues li p {
 					font-size: 14px;
-					/* margin: 10px auto; */
-					/* line-height: 22px; */
 					text-shadow: 1px 1px 2px black;
 				}
 		
 		#grad_top,
 		#grad_bottom {
-			/* width: 500px;
-			height: 80px; */
 			position: absolute;
 		}
 			#grad_top {

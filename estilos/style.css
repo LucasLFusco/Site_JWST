@@ -264,6 +264,6 @@ section#sbmais{
     padding: 0;
 }
 section > div > iframe{
-    width: 444px;
+    width: 100%;
     height: 611px;
 }

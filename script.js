@@ -13,7 +13,12 @@
 //     }
 // }
 
-
+/* MENU*/
 document.querySelector(".hamburger").addEventListener('click', () =>
     document.querySelector(".container").classList.toggle("show-menu")
 ); 
+
+/* FOTO*/
+
+var area = document.getElementsByClassName('.imagem')
+
